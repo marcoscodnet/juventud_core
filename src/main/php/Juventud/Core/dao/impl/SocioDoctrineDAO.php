@@ -86,8 +86,11 @@ class SocioDoctrineDAO extends CrudDAO implements ISocioDAO{
 		if( !empty($email) ){
 			$queryBuilder->andWhere( "s.email like '$email%'");
 		}
-		
-		
+
+        $nroSocio = $criteria->getNroSocio();
+        if( !empty($nroSocio) ){
+            $queryBuilder->andWhere( "s.nroSocio like '$nroSocio%'");
+        }
 		
 		
 	}	

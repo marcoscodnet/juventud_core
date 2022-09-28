@@ -22,6 +22,24 @@ class SocioCriteria extends Criteria{
 	
     private $tipoSocio;
 
+    private $nroSocio;
+
+    /**
+     * @return mixed
+     */
+    public function getNroSocio()
+    {
+        return $this->nroSocio;
+    }
+
+    /**
+     * @param mixed $nroSocio
+     */
+    public function setNroSocio($nroSocio): void
+    {
+        $this->nroSocio = $nroSocio;
+    }
+
 	
 
 

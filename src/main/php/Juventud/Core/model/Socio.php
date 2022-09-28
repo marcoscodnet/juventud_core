@@ -73,6 +73,27 @@ class Socio extends Entity{
 	 * @var \Date
 	 */
 	private $pagaDesde;
+
+    /**
+     * @Column(type="integer", unique=true)
+     */
+    private $nroSocio;
+
+    /**
+     * @return mixed
+     */
+    public function getNroSocio()
+    {
+        return $this->nroSocio;
+    }
+
+    /**
+     * @param mixed $nroSocio
+     */
+    public function setNroSocio($nroSocio): void
+    {
+        $this->nroSocio = $nroSocio;
+    }
 		
 	public function __construct(){
 	}
